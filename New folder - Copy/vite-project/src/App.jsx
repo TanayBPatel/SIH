@@ -1,35 +1,25 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import SignUp from "./components/SignUp";
-import Foot from "./components/Foot";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Top from "./components/Top";
+import SignUp from "./components/SignUp";
 import Welcome from "./components/Welcome";
-import Track from "./components/Track";
+import Top from "./components/Top";
+import Foot from "./components/Foot";
+import MyAccount from "./components/MyAccount";
 import Dashboard from "./components/Dashboard";
 
 export default function App() {
   return (
-    <>
-      <Top />
-      <Navbar />
-      <Foot />
-
-      <Top />
-      <Welcome />
-      <Foot />
-
-      <Top />
-      <Track />
-      <Foot />
-
-      <Top />
-      <SignUp />
-      <Foot />
-
-      <Top />
-      <Dashboard />
-      <Foot />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="navbar" element={<Navbar />} />
+        <Route path="welcome" element={<Welcome />} />
+        {/* <Route path="track" element={<Track />} /> */}
+        <Route path="myaccount" element={<MyAccount />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

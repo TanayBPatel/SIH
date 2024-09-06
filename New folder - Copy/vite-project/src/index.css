@@ -73,10 +73,13 @@ body {
   padding-right: 30px;
 }
 
-.main-nav .nav-links li a {
+.main-nav .nav-links li button {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
 }
 
 /* top finish */
@@ -552,4 +555,65 @@ ul {
 
 li {
   margin-bottom: 10px; 
+}
+
+.AccTotal{
+
+    width: 30%;
+    position: relative;
+    box-shadow: 5px 5px 10px;
+    border-radius: 20px;
+    background: transparent;
+    text-align: center;
+    margin: 80px 100px;
+    padding: 100px 100px;
+    padding-top: 0;
+    margin-left: 25%;
+  }
+.AccTotal h1{
+  margin-bottom: 50px;
+}
+  
+  .enteracc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 25px;
+    }
+  
+  .enteracc img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .enteracc p {
+    font-size: 17px;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .underline-input {
+    position: relative;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    width:300px;
+    transition: background-color 0.3s ease;
+    border-bottom: 4px solid transparent;
+    margin: 0 20px;
+    border-radius: 0px;
+  }
+  
+  .underline-input:focus {
+    background-color: white;
+    border-bottom: 2px solid black;
+  }
+  
+.block{
+  display: flex;
+  flex-direction: row;
+  gap:20px
 }
